@@ -1,0 +1,43 @@
+.header-accounts {
+  grid-area: header;
+  height: $header-height;
+  // background: linear-gradient(0deg, #fff 3%, hsla(0, 0%, 100%, 0)),
+  //  linear-gradient(-257deg, #aaf2e1, #93edf5 50%, #dbebff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: $border;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+  @include bg-blur;
+  &-start {
+    display: inline-flex;
+    align-items: center;
+  }
+  &-center {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-end {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+.list-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+}

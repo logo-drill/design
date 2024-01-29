@@ -1,0 +1,66 @@
+.faq-list {
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: #{$start-direction};
+    @include media-breakpoint-down(lg) {
+        max-width: none;
+    }
+    &-item {
+        padding: 2rem;
+        @include media-breakpoint-up(lg) {
+            padding: 2rem 3rem;
+        }
+        margin-bottom: 1rem;
+        background: $bg-gray;
+        border-radius: $common-radius;
+        h5 {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        p {
+            line-height: 1.7;
+            font-size: 0.9rem;
+            font-weight: $font-weight-light;
+            color: $txt-gray;
+            margin-top: 1rem;
+        }
+    }
+    &-link {
+        background-color: transparent;
+        border: none;
+        position: relative;
+        // display: inline-flex;
+        width: 100%;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: $txt-body;
+        margin: 0;
+        padding: 0;
+        padding-#{$start-direction}: 2rem;
+        text-align: #{$start-direction};
+        &:after,
+        &:before {
+            background: $txt-body;
+            content: "";
+            height: 2px;
+            position: absolute;
+            left: 0;
+            top: calc(50% - 1px);
+            width: 12px;
+        }
+        &:before {
+            transform: rotate(90deg);
+            transition: all 0.2s ease-in-out;
+        }
+        &[aria-expanded="true"]:before {
+            transform: rotate(0deg);
+        }
+    }
+    &-data {
+        margin-top: 2rem;
+        font-size: 0.85rem;
+    }
+}

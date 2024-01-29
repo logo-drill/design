@@ -1,0 +1,148 @@
+.choose-plan {
+    text-align: center;
+    margin: 0 auto;
+
+    padding-top: 4rem;
+    h1 {
+        font-weight: 600;
+        color: $txt-body;
+    }
+    .radio-button-group {
+        display: inline-flex;
+    }
+}
+$package: "package";
+.#{$package} {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 5rem 0;
+    &-head {
+        text-align: center;
+        h4 {
+            font-weight: 600;
+            color: $txt-body;
+        }
+        p {
+            font-weight: 400;
+            color: #b5b5c3;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+    }
+    &-body {
+        padding: 0 4rem;
+    }
+    &-foot {
+        text-align: center;
+        padding-top: 2rem;
+    }
+    &-price-row {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 5px;
+        color: $brand-color;
+        margin: 2.5rem 0;
+    }
+    &-currency {
+        line-height: 1;
+        padding: 0;
+        margin: 0;
+        position: static;
+        font-size: 14px;
+    }
+    &-price {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1;
+        padding: 0;
+        margin: 0;
+    }
+    &-age {
+        font-size: 14px;
+        color: $txt-gray;
+        line-height: 1;
+        padding: 0;
+        margin: 0;
+        position: static;
+    }
+    .feature {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &-list {
+            font-size: 0.85rem;
+            color: $txt-body;
+            font-weight: 500;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex-flow: row;
+            justify-content: space-between;
+            .svg {
+                color: $success-color;
+            }
+            &.denied {
+                color: $txt-gray;
+                opacity: 0.5;
+                .svg {
+                    color: $txt-gray;
+                }
+            }
+        }
+    }
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    &-box {
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding: 2rem 1rem;
+        &-head {
+            margin-bottom: 40px;
+            .svg-position {
+                svg {
+                    height: 60px;
+                    width: 60px;
+                    fill: $primary-color;
+                }
+            }
+        }
+        &-body {
+            padding: 2rem 0;
+        }
+        .widget-price-body {
+            .bold-title {
+                font-size: 30px;
+                font-weight: 700;
+            }
+            .text-semi {
+                font-size: 16px;
+                font-weight: 600;
+                @media screen and (max-width: 767px) {
+                    min-height: 50px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .pt-20 {
+                    padding-top: 0px;
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width: 576px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}

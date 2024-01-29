@@ -1,0 +1,57 @@
+:root {
+    --brand-color: #058091;
+    --brand-color-inverse: #ffffff;
+    --bg-white: #ffffff;
+    --bg-white-inverse: #000;
+    --bg-black: #000;
+    --bg-black-inverse: #fff;
+    --txt-body: #000;
+    --txt-gray: #888;
+    --border-color: #dee2e6;
+    --bg-gray: #f9f9fc;
+    --message-gray: #e6e6e6;
+}
+[data-theme="dark"] {
+    body {
+        background: var(--bg-gray);
+    }
+    &:root {
+        --txt-body: #fff;
+        --txt-gray: #888;
+        --bg-white: #000;
+        --bg-white-inverse: #fff;
+        --bg-black: #fff;
+        --bg-black-inverse: #000;
+        --bg-gray: #1d1d1d;
+        --border-color: #232323;
+    }
+}
+$brand-color: #058091 !default;
+$brand--inverse: #fff !default;
+$dark-color: #282a3c !default;
+$light-color: #ffffff !default;
+$primary-color: #5867dd !default;
+$success-color: #1dc9b7 !default;
+$warning-color: #ffb822 !default;
+$info-color: #5578eb !default;
+$danger-color: #fd397a !default;
+//$border-color: #e2e5ec !default;
+$border-dark-color: #e2e5ec !default;
+$border-light-color: #e2e5ec !default;
+//$txt-body: #212529 !default;
+//$txt-gray:#888!default;
+//
+$bg-white: var(--bg-white);
+$bg-white-inverse: var(--bg-white-inverse);
+//
+$bg-black: var(--bg-black);
+$bg-black-inverse: var(--bg-black-inverse);
+//
+$bg-gray: var(--bg-gray);
+//$bg-gray-inverse:;
+//
+$txt-body: var(--txt-body);
+$txt-gray: var(--txt-gray);
+//
+$border-color: var(--border-color);
+$border: solid 1px$border-color;

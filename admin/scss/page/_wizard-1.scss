@@ -1,0 +1,134 @@
+$wizard: "wizard";
+$wizard-width: 800px;
+.#{$wizard}-v1 {
+    display: flex;
+    flex-direction: column;
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: space-between;
+        //border-bottom: $border;
+        max-width: $wizard-width;
+        width: 100%;
+        margin: 2rem auto;
+        &-item {
+            background-color: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: $txt-body;
+            white-space: nowrap;
+            padding: 0.5rem 0;
+            &:disabled {
+                color: $txt-gray;
+                opacity: 0.5;
+            }
+            &.active {
+                color: $brand-color;
+                position: relative;
+                &::after {
+                    content: "";
+                    background-color: $brand-color;
+                    height: 2px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+        &-icon {
+            display: none;
+        }
+    }
+
+    &__body {
+        max-width: $wizard-width;
+        width: 100%;
+        margin: 2rem auto;
+    }
+    &__foot {
+        max-width: $wizard-width;
+        width: 100%;
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-direction: row;
+    }
+}
+
+.#{$wizard}-v2 {
+    display: flex;
+    .#{$wizard}-v2-aside {
+        flex: 0 0 400px;
+        display: flex;
+        width: 400px;
+        border-right: $border;
+        padding: 4.5rem 2.5rem 4.5rem 1.5rem;
+    }
+
+    .#{$wizard}-v2-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .#{$wizard}-v2-nav-item {
+            padding: 1rem 1.2rem;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            border-radius: $radius;
+            position: relative;
+            &[data-state="current"] {
+                background-color: $bg-gray;
+                .svg-icon {
+                    svg {
+                        g {
+                            [fill] {
+                                fill: $brand-color;
+                            }
+                        }
+                    }
+                }
+                &::after {
+                    left: 100%;
+                    top: 50%;
+
+                    transform: translateY(-50%);
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    border: solid transparent;
+                    position: absolute;
+                    border-left-color: $bg-gray;
+                    border-width: 1rem;
+                }
+            }
+
+            .svg-icon {
+                svg {
+                    g {
+                        [fill] {
+                            transition: fill 0.3s ease;
+                            fill: #b5b5c3;
+                        }
+                    }
+                }
+            }
+        }
+        &-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: $txt-body;
+            margin: 0;
+        }
+        &-desc {
+            font-size: 0.85rem;
+        }
+    }
+}

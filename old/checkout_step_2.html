@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs ======================== -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Logo Drill - Payment</title>
+
+    <!-- CSS ================================================== -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/front-en.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Mobile Specific Metas ===================== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- favicon ================================================== -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon/favicon-32.png" />
+  </head>
+
+  <body class="page-steps">
+    <header class="header" role="header">
+      <div class="container-fluid">
+        <div class="row justify-content-between align-items-center" role="row">
+          <div class="col-md-4 col-4">
+            <div class="d-flex">
+              <button href="editor_step_1.html" class="action-inline">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  preserveAspectRatio="xMidYMid"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M18.876,6.905 L18.907,6.912 L5.524,6.912 L9.731,2.597 C9.937,2.387 10.050,2.101 10.050,1.802 C10.050,1.502 9.937,1.219 9.731,1.008 L9.077,0.337 C8.871,0.127 8.597,0.010 8.304,0.010 C8.011,0.010 7.737,0.126 7.531,0.337 L0.320,7.716 C0.113,7.928 -0.000,8.209 0.001,8.509 C-0.000,8.811 0.113,9.092 0.320,9.304 L7.531,16.684 C7.737,16.894 8.011,17.010 8.304,17.010 C8.597,17.010 8.871,16.894 9.077,16.684 L9.731,16.014 C9.937,15.803 10.050,15.522 10.050,15.223 C10.050,14.924 9.937,14.657 9.731,14.447 L5.477,10.108 L18.891,10.108 C19.493,10.108 20.000,9.576 20.000,8.960 L20.000,8.012 C20.000,7.395 19.479,6.905 18.876,6.905 Z"
+                    transform="translate(0 1.5)"
+                    class="cls-1"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-4 justify-content-center d-flex">
+            <figure class="site-logo" role="logo">
+              <button href="index.html" class="desktop-logo">
+                <img src="images/company_logo.svg" alt="LogoDrill" />
+              </button>
+              <button href="index.html" class="mobile-logo">
+                <img src="images/mobile-logo.svg" alt="LogoDrill" />
+              </button>
+            </figure>
+          </div>
+
+          <div class="col-md-4 col-4 d-flex justify-content-end">
+            <!-- [ NON LOGGED IN USER -->
+            <!--
+                        <div class="site-header__action">
+                            <a href="login.html" class="btn btn-secondary btn--icon" role="button">
+                            <span class="svg-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 258.75 258.75" style="enable-background:new 0 0 258.75 258.75;" xml:space="preserve">
+                                    <g>
+                                        <circle cx="129.375" cy="60" r="60"/>
+                                        <path d="M129.375,150c-60.061,0-108.75,48.689-108.75,108.75h217.5C238.125,198.689,189.436,150,129.375,150z"/>
+                                    </g>
+                                    </svg>
+                            </span>Sign In</a>
+                        </div>
+-->
+            <!-- ] -->
+
+            <!-- [ LOGGED IN USER -->
+
+            <div class="site-header__action">
+              <button
+                href="javascript:void(0)"
+                class="account-action account-action-js"
+                role="button"
+              >
+                <span class="avtar avtar--xsmall" data-text="J"></span>
+              </button>
+              <div class="account-dropdown account-dropdown-js">
+                <div class="account-dropdown__head">
+                  <h6 class="color-primary m-0">James Anderson</h6>
+                  <p class="m-0">James1986@dummyid.com</p>
+                </div>
+                <div class="account-dropdown__body">
+                  <nav class="account-links">
+                    <ul>
+                      <li>
+                        <button href="user_dashboard.html">Dashboard</button>
+                      </li>
+                      <li><button href="#">My Logos</button></li>
+                      <li>
+                        <button href="user_orders.html">My Ordres</button>
+                      </li>
+                      <li class="d-xl-none d-lg-block">
+                        <button href="#">Affiliate</button>
+                      </li>
+                      <li class="d-xl-none d-lg-block">
+                        <button href="user_notifications.html">
+                          Notifications
+                        </button>
+                      </li>
+                      <li class="d-xl-none d-lg-block">
+                        <button href="user_change_password.html">
+                          Settings
+                        </button>
+                      </li>
+                      <li><button href="#">Logout</button></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+
+            <!-- ] -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER ENDS ========= -->
+
+    <!-- SITE-BODY STARTS ========= -->
+    <section class="site-body" role="page-body">
+      <!-- SECTION STARTS ========= -->
+      <section
+        class="section section-page"
+        style="padding-bottom: 40px"
+        role="contentinfo"
+      >
+        <div class="section__pricing-upper">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-5 col-lg-5 col-md-10 mb-3 mb-md-5">
+                <div class="tile">
+                  <div class="tile__media">
+                    <div class="tile__media-svg">
+                      <img src="images/preview-logo.png" alt="" />
+                    </div>
+                    <span class="tile__watermark"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hgroup class="page-heading text-center mb-xl-4 mb-lg-3">
+              <h1>Checkout</h1>
+              <h5>Complete your purchase</h5>
+            </hgroup>
+          </div>
+        </div>
+
+        <div class="section__pricing-lower">
+          <div class="container">
+            <div class="payment-container">
+              <div class="row justify-content-between">
+                <div class="col-lg-7">
+                  <div class="box-round height-100">
+                    <div class="box-round__head">
+                      <h6 class="m-0">Select Payment Method</h6>
+                    </div>
+
+                    <div class="box-round__body p-4">
+                      <div class="selection-tabs mb-4">
+                        <ul>
+                          <li class="is-active">
+                            <button class="selection-tabs__item">
+                              <img src="images/paypal.png" alt="" />
+                              Paypal
+                            </button>
+                          </li>
+                          <li>
+                            <button class="selection-tabs__item">
+                              <img src="images/stripe-payment.png" alt="" />
+                              Stripe
+                            </button>
+                          </li>
+                          <li>
+                            <button class="selection-tabs__item">
+                              <img src="images/card.png" alt="" />
+                              Credit Card
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <p><strong>Billing Information</strong></p>
+
+                      <div class="form">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <div class="form-field">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="&nbsp;"
+                                />
+                                <label class="form-label">Name</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <div class="form-field">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="&nbsp;"
+                                />
+                                <label class="form-label">Email</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <div class="form-field">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="&nbsp;"
+                                />
+                                <label class="form-label">Phone Number</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <div class="form-field">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="&nbsp;"
+                                />
+                                <label class="form-label">Country</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-5">
+                  <div class="box-round mt-lg-0 mt-4 height-100">
+                    <div class="box-round__head">
+                      <h6 class="m-0">Order Summary</h6>
+                    </div>
+
+                    <div class="box-round__body">
+                      <div class="coupon-form p-4">
+                        <p class="mb-0"><strong>Have a Coupon?</strong></p>
+                        <div class="form-inline form-inline--small mt-2">
+                          <form
+                            class="d-sm-flex justify-content-between"
+                            role="form"
+                          >
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Enter here"
+                            />
+                            <button class="btn btn-brand" role="button">
+                              Apply
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+
+                      <div class="total-summary">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td>Premium Package</td>
+                              <td class="text-right">₹ 500.00</td>
+                            </tr>
+                            <tr class="total">
+                              <td><stong>Total</stong></td>
+                              <td class="text-right">₹ 500</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="p-4">
+                        <button class="btn btn-secondary btn--block">
+                          Purchase Now
+                        </button>
+                      </div>
+
+                      <p class="secure-text text-center pb-3">
+                        <span class="svg-icon"
+                          ><svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 229.5 229.5"
+                            style="enable-background: new 0 0 229.5 229.5"
+                            xml:space="preserve"
+                          >
+                            <path
+                              d="M214.419,32.12c-0.412-2.959-2.541-5.393-5.419-6.193L116.76,0.275c-1.315-0.366-2.704-0.366-4.02,0L20.5,25.927
+	c-2.878,0.8-5.007,3.233-5.419,6.193c-0.535,3.847-12.74,94.743,18.565,139.961c31.268,45.164,77.395,56.738,79.343,57.209
+	c0.579,0.14,1.169,0.209,1.761,0.209s1.182-0.07,1.761-0.209c1.949-0.471,48.076-12.045,79.343-57.209
+	C227.159,126.864,214.954,35.968,214.419,32.12z M174.233,85.186l-62.917,62.917c-1.464,1.464-3.384,2.197-5.303,2.197
+	s-3.839-0.732-5.303-2.197l-38.901-38.901c-1.407-1.406-2.197-3.314-2.197-5.303s0.791-3.897,2.197-5.303l7.724-7.724
+	c2.929-2.928,7.678-2.929,10.606,0l25.874,25.874l49.89-49.891c1.406-1.407,3.314-2.197,5.303-2.197s3.897,0.79,5.303,2.197
+	l7.724,7.724C177.162,77.508,177.162,82.257,174.233,85.186z"
+                            /></svg
+                        ></span>
+                        Secured by 256-bit SSL encryption
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION ENDS ========= -->
+    </section>
+    <!-- SITE-BODY ENDS ========= -->
+
+    <!-- FOOTER STARTS ========= -->
+    <footer class="site-footer" role="footer">
+      <!--  FOOTER LOWER STARTS ========= -->
+      <section class="section site--footer-lower p-0" role="contentinfo">
+        <div class="container">
+          <div
+            class="row justify-content-between align-items-center"
+            role="row"
+          >
+            <div class="col-md-7">
+              <nav class="inline-links" role="menu">
+                <ul>
+                  <li><button role="menuitem">Home</button></li>
+                  <li><button role="menuitem">About</button></li>
+                  <li><button role="menuitem">FAQ</button></li>
+                  <li><button role="menuitem">Blog</button></li>
+                  <li><button role="menuitem">Contact</button></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-md-auto">
+              <nav class="inline-links" role="menu">
+                <ul>
+                  <li><button role="menuitem">Privacy Policy</button></li>
+                  <li><button role="menuitem">Terms & Conditions</button></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  FOOTER LOWER ENDS ========= -->
+    </footer>
+    <!-- FOOTER ENDS ========= -->
+
+    <!-- JS ================================================== -->
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="js/ui_functions.js" type="text/javascript"></script>
+  </body>
+</html>

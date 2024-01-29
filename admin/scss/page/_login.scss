@@ -1,0 +1,235 @@
+$login: "login";
+$input-padding: 1.5rem 1rem;
+
+.#{$login} {
+  display: flex;
+  height: 100%;
+  .form {
+    input {
+      padding: $input-padding;
+    }
+  }
+}
+.login-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  &-body {
+    padding: 3rem;
+  }
+}
+
+.#{$login}-v1 {
+  #particles-js {
+    height: 350px;
+  }
+  .login-block {
+    max-width: 450px;
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    img {
+      margin: 0 auto;
+      max-width: 120px;
+    }
+  }
+  .card {
+    padding: 2rem 3rem;
+    &-head {
+      border: none;
+      padding: 0;
+      padding-bottom: 1rem;
+    }
+    &-body {
+      padding: 0;
+      // padding: 2rem;
+    }
+    &-foot {
+      border: none;
+      padding: 0;
+    }
+    .title {
+      margin-bottom: 0.5rem;
+      h2 {
+        font-size: 1.5rem;
+        color: $txt-body;
+      }
+    }
+  }
+}
+
+.#{$login}-v2 {
+  #particles-js {
+    height: 100%;
+  }
+
+  .login-page {
+    &-body {
+      @include media-breakpoint-up(md) {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .login-block {
+    margin: 0 auto;
+    max-width: 450px;
+    width: 100%;
+  }
+  .logo {
+    margin: 1.5rem auto;
+  }
+
+  .card-body {
+    padding: 2rem 3rem;
+  }
+}
+.#{$login}-v3 {
+  background-color: #fff;
+  .login-wrap {
+    @include media-breakpoint-up(md) {
+      height: 100%;
+      display: grid;
+      grid-template: auto / 400px auto;
+    }
+    &-aside {
+      background-color: $brand-color;
+      color: $brand-color-inverse;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 2.5rem;
+      gap: 1.5rem;
+      &-body {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+    }
+    &-main {
+      display: flex;
+      flex-direction: column;
+      &-body {
+        padding: 2rem;
+        flex: 1;
+        @include media-breakpoint-up(md) {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .login-block {
+    max-width: 450px;
+    flex: 1;
+    margin: 0 auto;
+  }
+
+  .version {
+    text-align: #{$start-direction};
+  }
+}
+
+.#{$login}-v4 {
+  .login-wrap {
+    @include media-breakpoint-up(md) {
+      height: 100%;
+      display: grid;
+      grid-template: auto / 500px auto;
+    }
+    &-aside {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 2.5rem;
+      gap: 1.5rem;
+      &-body {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+    }
+    &-main {
+      background-color: $brand-color;
+      color: $brand-color-inverse;
+      display: flex;
+      flex-direction: column;
+      &-body {
+        padding: 2rem;
+        flex: 1;
+        @include media-breakpoint-up(md) {
+          display: flex;
+          align-items: center;
+        }
+      }
+      &-content {
+        max-width: 650px;
+        margin: 0 auto;
+        h3 {
+          font-weight: 300;
+          font-size: clamp(2rem, 5vw, 3.5rem);
+        }
+      }
+    }
+  }
+
+  .login-block {
+    max-width: 450px;
+    flex: 1;
+    margin: 0 auto;
+  }
+  .version {
+    text-align: #{$start-direction};
+  }
+
+  .copyright {
+    color: #fff;
+  }
+}
+
+.field-password {
+  height: 100%;
+  // height: $input-height;
+  width: 3rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktdGhyZWUtZG90cyIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNMyA5LjVhMS41IDEuNSAwIDEgMSAwLTMgMS41IDEuNSAwIDAgMSAwIDN6bTUgMGExLjUgMS41IDAgMSAxIDAtMyAxLjUgMS41IDAgMCAxIDAgM3ptNSAwYTEuNSAxLjUgMCAxIDEgMC0zIDEuNSAxLjUgMCAwIDEgMCAzeiIvPgo8L3N2Zz4=);
+  &-show {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktZXllIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik0xNiA4cy0zLTUuNS04LTUuNVMwIDggMCA4czMgNS41IDggNS41UzE2IDggMTYgOHpNMS4xNzMgOGExMy4xMzMgMTMuMTMzIDAgMCAxIDEuNjYtMi4wNDNDNC4xMiA0LjY2OCA1Ljg4IDMuNSA4IDMuNWMyLjEyIDAgMy44NzkgMS4xNjggNS4xNjggMi40NTdBMTMuMTMzIDEzLjEzMyAwIDAgMSAxNC44MjggOGMtLjA1OC4wODctLjEyMi4xODMtLjE5NS4yODgtLjMzNS40OC0uODMgMS4xMi0xLjQ2NSAxLjc1NUMxMS44NzkgMTEuMzMyIDEwLjExOSAxMi41IDggMTIuNWMtMi4xMiAwLTMuODc5LTEuMTY4LTUuMTY4LTIuNDU3QTEzLjEzNCAxMy4xMzQgMCAwIDEgMS4xNzIgOHoiLz4KICA8cGF0aCBkPSJNOCA1LjVhMi41IDIuNSAwIDEgMCAwIDUgMi41IDIuNSAwIDAgMCAwLTV6TTQuNSA4YTMuNSAzLjUgMCAxIDEgNyAwIDMuNSAzLjUgMCAwIDEtNyAweiIvPgo8L3N2Zz4=);
+  }
+}
+
+.other-links {
+  font-size: 0.85rem;
+  color: $brand-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  li {
+    display: inline-block;
+  }
+  a {
+    color: currentColor;
+  }
+}
+.version {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}

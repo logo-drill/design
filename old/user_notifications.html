@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs ======================== -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Logo Drill - Orders</title>
+
+    <!-- CSS ================================================== -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/front-en.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Mobile Specific Metas ===================== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- favicon ================================================== -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon/favicon-32.png" />
+  </head>
+
+  <body class="is-dashboard">
+    <header class="header" role="header">
+      <div class="container">
+        <div class="row justify-content-between align-items-center" role="row">
+          <div class="col-xl-2 col-lg-4 col-md-6 col-8">
+            <a href="javascript:void(0)" class="nav-toggle nav-toggle-js"
+              ><span></span
+            ></a>
+            <figure class="site-logo" role="logo">
+              <a href="index.html" class="desktop-logo"
+                ><img src="images/company_logo.svg" alt="LogoDrill"
+              /></a>
+              <a href="index.html" class="mobile-logo"
+                ><img src="images/mobile-logo.svg" alt="LogoDrill"
+              /></a>
+            </figure>
+          </div>
+          <div class="col-xl-8 col-lg-4 col-md-2 offset-menu">
+            <nav class="site-nav" role="menu">
+              <ul>
+                <li><a href="#" role="menuitem">Home</a></li>
+                <li><a href="#" role="menuitem">About</a></li>
+                <li><a href="#" role="menuitem">FAQ</a></li>
+                <li><a href="#" role="menuitem">Blog</a></li>
+                <li><a href="#" role="menuitem">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-xl-2 col-lg-auto col-md-auto col-auto">
+            <div class="site-header__action">
+              <a
+                href="javascript:void(0)"
+                class="account-action account-action-js"
+                role="button"
+              >
+                <span class="avtar avtar--xsmall" data-text="J"></span>
+              </a>
+              <div class="account-dropdown account-dropdown-js">
+                <div class="account-dropdown__head">
+                  <h6 class="color-primary m-0">James Anderson</h6>
+                  <p class="m-0">James1986@dummyid.com</p>
+                </div>
+                <div class="account-dropdown__body">
+                  <nav class="account-links">
+                    <ul>
+                      <li><a href="user_dashboard.html">Dashboard</a></li>
+                      <li><a href="#">My Logos</a></li>
+                      <li><a href="user_orders.html">My Ordres</a></li>
+                      <li class="d-xl-none d-lg-block">
+                        <a href="#">Affiliate</a>
+                      </li>
+                      <li class="d-xl-none d-lg-block">
+                        <a href="user_notifications.html">Notifications</a>
+                      </li>
+                      <li class="d-xl-none d-lg-block">
+                        <a href="user_change_password.html">Settings</a>
+                      </li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER ENDS ========= -->
+
+    <!-- SITE-BODY STARTS ========= -->
+    <section class="main" role="page-body">
+      <!-- SECTION STARTS ========= -->
+      <section class="section section-page" role="contentinfo">
+        <div class="container">
+          <span class="site-banner__layer-1"></span>
+          <span class="site-banner__layer-2"></span>
+          <span class="site-banner__layer-3"></span>
+          <span class="site-banner__layer-4"></span>
+
+          <div class="d-flex justify-content-between page-panel" role="row">
+            <div class="page-panel__left d-none d-xl-block">
+              <div class="box-round mb-4 p-3">
+                <div class="profile-box">
+                  <div class="profile-box__left">
+                    <div class="avtar avtar--small" data-text="J"></div>
+                  </div>
+                  <div class="profile-box__right">
+                    <p class="m-0">Hello,</p>
+                    <h6 class="color-primary m-0">James Anderson</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="box-round">
+                <nav class="nav-vertical">
+                  <ul>
+                    <li>
+                      <a href="user_dashboard.html">
+                        <span class="nav-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid"
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                          >
+                            <path
+                              d="M7.200,15.011 L7.200,9.713 L10.800,9.713 L10.800,15.011 L15.300,15.011 L15.300,7.947 L18.000,7.947 L9.000,0.000 L-0.000,7.947 L2.700,7.947 L2.700,15.011 L7.200,15.011 Z"
+                              transform="translate(6 7.5)"
+                            />
+                          </svg>
+                        </span>
+                        Dashboard
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#">
+                        <span class="nav-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid"
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                          >
+                            <path
+                              d="M8.000,14.000 L8.000,8.000 L14.000,8.000 L14.000,14.000 L8.000,14.000 ZM8.000,-0.000 L14.000,-0.000 L14.000,6.000 L8.000,6.000 L8.000,-0.000 ZM-0.000,8.000 L6.000,8.000 L6.000,14.000 L-0.000,14.000 L-0.000,8.000 ZM-0.000,-0.000 L6.000,-0.000 L6.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"
+                              transform="translate(8 8)"
+                            />
+                          </svg>
+                        </span>
+                        My Logos
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#">
+                        <span class="nav-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid"
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                          >
+                            <path
+                              d="M-0.000,7.000 L0.005,3.788 C0.005,3.386 0.145,3.043 0.424,2.757 C0.704,2.471 1.040,2.328 1.433,2.328 L4.576,2.328 L4.576,0.868 C4.576,0.625 4.660,0.418 4.826,0.247 C4.993,0.077 5.195,-0.008 5.433,-0.008 L10.576,-0.008 C10.814,-0.008 11.017,0.077 11.183,0.247 C11.350,0.418 11.433,0.625 11.433,0.868 L11.433,2.328 L14.576,2.328 C14.969,2.328 15.305,2.471 15.585,2.757 C15.865,3.043 16.005,3.386 16.005,3.788 L16.000,7.000 L-0.000,7.000 ZM10.290,1.160 L5.719,1.160 L5.719,2.328 L10.290,2.328 L10.290,1.160 ZM9.000,8.000 L9.000,9.000 L7.000,9.000 L7.000,8.000 L9.000,8.000 ZM6.005,9.628 C6.005,9.786 6.061,9.923 6.174,10.039 C6.288,10.154 6.421,10.212 6.576,10.212 L9.433,10.212 C9.588,10.212 9.722,10.154 9.835,10.039 C9.948,9.923 10.005,9.786 10.005,9.628 L10.000,8.000 L16.000,8.000 L16.005,13.548 C16.005,13.949 15.865,14.293 15.585,14.579 C15.305,14.865 14.969,15.008 14.576,15.008 L1.433,15.008 C1.040,15.008 0.704,14.865 0.424,14.579 C0.145,14.293 0.005,13.949 0.005,13.548 L-0.000,8.000 L6.000,8.000 L6.005,9.628 Z"
+                              transform="translate(7 7.5)"
+                            />
+                          </svg>
+                        </span>
+                        Affiliate
+                      </a>
+                    </li>
+                    <li class="is-active">
+                      <a href="user_notifications.html">
+                        <span class="nav-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid"
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                          >
+                            <path
+                              d="M14.945,15.560 C14.878,15.677 14.754,15.750 14.619,15.750 L0.369,15.750 C0.234,15.750 0.110,15.677 0.043,15.559 C-0.023,15.442 -0.022,15.298 0.048,15.181 L1.336,13.035 C1.930,12.044 2.244,10.910 2.244,9.755 L2.244,7.875 C2.244,5.501 3.828,3.493 5.994,2.846 L5.994,1.500 C5.994,0.673 6.666,-0.000 7.494,-0.000 C8.321,-0.000 8.994,0.673 8.994,1.500 L8.994,2.846 C11.160,3.493 12.744,5.501 12.744,7.875 L12.744,9.755 C12.744,10.910 13.058,12.045 13.653,13.036 L14.940,15.182 C15.009,15.298 15.012,15.443 14.945,15.560 ZM7.494,18.000 C6.450,18.000 5.555,17.383 5.132,16.500 L9.855,16.500 C9.432,17.383 8.537,18.000 7.494,18.000 Z"
+                              transform="translate(7.5 6)"
+                            />
+                          </svg>
+                        </span>
+                        Notifications
+                      </a>
+                    </li>
+                    <li>
+                      <a href="user_orders.html">
+                        <span class="nav-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid"
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                          >
+                            <path
+                              d="M-0.000,15.000 L-0.000,-0.000 L15.000,-0.000 L15.000,15.000 L-0.000,15.000 ZM12.000,4.000 L3.000,4.000 L3.000,5.000 L12.000,5.000 L12.000,4.000 ZM12.000,7.000 L3.000,7.000 L3.000,8.000 L12.000,8.000 L12.000,7.000 ZM12.000,10.000 L3.000,10.000 L3.000,11.000 L12.000,11.000 L12.000,10.000 Z"
+                              transform="translate(7.5 7.5)"
+                            />
+                          </svg>
+                        </span>
+                        My Orders
+                      </a>
+                    </li>
+                    <li>
+                      <a href="user_change_password.html">
+                        <span class="nav-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid"
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                          >
+                            <path
+                              d="M18.952,8.440 C18.922,8.173 18.610,7.972 18.341,7.972 C17.469,7.972 16.696,7.461 16.371,6.669 C16.040,5.859 16.254,4.914 16.903,4.319 C17.108,4.132 17.133,3.819 16.961,3.602 C16.515,3.036 16.008,2.525 15.454,2.082 C15.238,1.908 14.920,1.932 14.732,2.140 C14.165,2.767 13.146,3.001 12.359,2.672 C11.541,2.328 11.024,1.499 11.075,0.609 C11.091,0.329 10.887,0.086 10.608,0.054 C9.897,-0.029 9.181,-0.031 8.468,0.048 C8.193,0.078 7.988,0.316 7.997,0.592 C8.028,1.473 7.505,2.288 6.695,2.620 C5.917,2.937 4.906,2.706 4.340,2.084 C4.153,1.879 3.841,1.854 3.622,2.024 C3.053,2.471 2.534,2.983 2.084,3.544 C1.908,3.762 1.934,4.079 2.141,4.266 C2.803,4.865 3.016,5.818 2.672,6.638 C2.344,7.419 1.532,7.923 0.603,7.923 C0.301,7.913 0.087,8.115 0.053,8.390 C-0.030,9.103 -0.031,9.831 0.049,10.551 C0.079,10.819 0.400,11.018 0.673,11.018 C1.501,10.997 2.296,11.509 2.630,12.321 C2.963,13.131 2.749,14.075 2.098,14.671 C1.895,14.858 1.869,15.170 2.041,15.387 C2.482,15.950 2.990,16.461 3.545,16.908 C3.763,17.084 4.080,17.059 4.269,16.851 C4.838,16.222 5.856,15.990 6.640,16.318 C7.461,16.662 7.978,17.491 7.927,18.381 C7.911,18.661 8.116,18.905 8.394,18.936 C8.757,18.979 9.123,19.000 9.489,19.000 C9.837,19.000 10.186,18.981 10.534,18.942 C10.809,18.912 11.014,18.674 11.004,18.398 C10.972,17.517 11.496,16.702 12.306,16.371 C13.088,16.052 14.095,16.285 14.661,16.906 C14.849,17.111 15.160,17.136 15.379,16.966 C15.948,16.521 16.465,16.009 16.918,15.446 C17.093,15.228 17.068,14.911 16.861,14.724 C16.199,14.125 15.984,13.172 16.328,12.353 C16.651,11.582 17.433,11.064 18.274,11.064 L18.391,11.067 C18.664,11.090 18.915,10.879 18.948,10.601 C19.032,9.887 19.033,9.160 18.952,8.440 ZM9.501,14.975 C6.472,14.975 4.018,12.522 4.018,9.495 C4.018,6.469 6.473,4.016 9.501,4.016 C12.529,4.016 14.984,6.469 14.984,9.495 C14.984,10.522 14.701,11.483 14.209,12.305 L11.808,9.905 C11.981,9.496 12.073,9.052 12.073,8.594 C12.073,7.696 11.723,6.853 11.088,6.218 C10.454,5.584 9.609,5.234 8.712,5.234 C8.412,5.234 8.114,5.274 7.825,5.353 C7.699,5.387 7.596,5.491 7.562,5.618 C7.528,5.747 7.566,5.880 7.668,5.981 C7.668,5.981 8.853,7.175 9.250,7.571 C9.291,7.612 9.291,7.712 9.285,7.747 L9.281,7.773 C9.242,8.209 9.164,8.732 9.101,8.933 C9.092,8.941 9.084,8.949 9.076,8.957 C9.066,8.966 9.058,8.975 9.049,8.984 C8.845,9.050 8.314,9.128 7.871,9.167 L7.871,9.165 L7.851,9.170 C7.848,9.170 7.841,9.171 7.832,9.171 C7.785,9.171 7.714,9.157 7.650,9.093 C7.237,8.681 6.098,7.551 6.098,7.551 C5.996,7.449 5.891,7.428 5.822,7.428 C5.659,7.428 5.513,7.545 5.467,7.714 C5.154,8.873 5.486,10.121 6.335,10.969 C6.970,11.603 7.814,11.953 8.712,11.953 C9.170,11.953 9.615,11.861 10.024,11.687 L12.452,14.113 C11.599,14.658 10.588,14.975 9.501,14.975 Z"
+                              transform="translate(5.48 5.5)"
+                            />
+                          </svg>
+                        </span>
+                        Settings
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="page-panel__right">
+              <div class="box-round box-round-height">
+                <div class="box-round__head">
+                  <h1 class="page-tile m-0">Notifications</h1>
+
+                  <div class="page-controls">
+                    <div class="row">
+                      <aside class="col-lg-6 col-md-6 col-sm-6">
+                        <ul class="controls">
+                          <li>
+                            <span>
+                              <label class="checkbox">
+                                <input type="checkbox" /><i
+                                  class="input-helper"
+                                ></i>
+                              </label>
+                            </span>
+                          </li>
+                        </ul>
+                        <ul class="controls">
+                          <li>
+                            <a href="#">
+                              <span class="svg-icon">
+                                <svg
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  x="0px"
+                                  y="0px"
+                                  width="482.428px"
+                                  height="482.429px"
+                                  viewBox="0 0 482.428 482.429"
+                                  style="
+                                    enable-background: new 0 0 482.428 482.429;
+                                  "
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g>
+                                      <path
+                                        d="M381.163,57.799h-75.094C302.323,25.316,274.686,0,241.214,0c-33.471,0-61.104,25.315-64.85,57.799h-75.098
+                    c-30.39,0-55.111,24.728-55.111,55.117v2.828c0,23.223,14.46,43.1,34.83,51.199v260.369c0,30.39,24.724,55.117,55.112,55.117
+                    h210.236c30.389,0,55.111-24.729,55.111-55.117V166.944c20.369-8.1,34.83-27.977,34.83-51.199v-2.828
+                    C436.274,82.527,411.551,57.799,381.163,57.799z M241.214,26.139c19.037,0,34.927,13.645,38.443,31.66h-76.879
+                    C206.293,39.783,222.184,26.139,241.214,26.139z M375.305,427.312c0,15.978-13,28.979-28.973,28.979H136.096
+                    c-15.973,0-28.973-13.002-28.973-28.979V170.861h268.182V427.312z M410.135,115.744c0,15.978-13,28.979-28.973,28.979H101.266
+                    c-15.973,0-28.973-13.001-28.973-28.979v-2.828c0-15.978,13-28.979,28.973-28.979h279.897c15.973,0,28.973,13.001,28.973,28.979
+                    V115.744z"
+                                      ></path>
+                                      <path
+                                        d="M171.144,422.863c7.218,0,13.069-5.853,13.069-13.068V262.641c0-7.216-5.852-13.07-13.069-13.07
+                    c-7.217,0-13.069,5.854-13.069,13.07v147.154C158.074,417.012,163.926,422.863,171.144,422.863z"
+                                      ></path>
+                                      <path
+                                        d="M241.214,422.863c7.218,0,13.07-5.853,13.07-13.068V262.641c0-7.216-5.854-13.07-13.07-13.07
+                    c-7.217,0-13.069,5.854-13.069,13.07v147.154C228.145,417.012,233.996,422.863,241.214,422.863z"
+                                      ></path>
+                                      <path
+                                        d="M311.284,422.863c7.217,0,13.068-5.853,13.068-13.068V262.641c0-7.216-5.852-13.07-13.068-13.07
+                    c-7.219,0-13.07,5.854-13.07,13.07v147.154C298.213,417.012,304.067,422.863,311.284,422.863z"
+                                      ></path>
+                                    </g>
+                                  </g></svg
+                              ></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <span class="svg-icon">
+                                <svg
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  x="0px"
+                                  y="0px"
+                                  width="344.37px"
+                                  height="344.37px"
+                                  viewBox="0 0 344.37 344.37"
+                                  style="
+                                    enable-background: new 0 0 344.37 344.37;
+                                  "
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <path
+                                      d="M334.485,37.463c-6.753-1.449-13.396,2.853-14.842,9.603l-9.084,42.391C281.637,40.117,228.551,9.155,170.368,9.155
+                    c-89.603,0-162.5,72.896-162.5,162.5c0,6.903,5.596,12.5,12.5,12.5c6.903,0,12.5-5.597,12.5-12.5
+                    c0-75.818,61.682-137.5,137.5-137.5c49.429,0,94.515,26.403,118.925,68.443l-41.674-8.931c-6.752-1.447-13.396,2.854-14.841,9.604
+                    c-1.446,6.75,2.854,13.396,9.604,14.842l71.536,15.33c1.215,0.261,2.449,0.336,3.666,0.234c2.027-0.171,4.003-0.836,5.743-1.962
+                    c2.784-1.801,4.738-4.634,5.433-7.875l15.331-71.536C345.535,45.555,341.235,38.911,334.485,37.463z"
+                                    ></path>
+                                    <path
+                                      d="M321.907,155.271c-6.899,0.228-12.309,6.006-12.081,12.905c1.212,36.708-11.942,71.689-37.042,98.504
+                    c-25.099,26.812-59.137,42.248-95.844,43.46c-1.53,0.05-3.052,0.075-4.576,0.075c-47.896-0.002-92.018-24.877-116.936-65.18
+                    l43.447,11.65c6.668,1.787,13.523-2.168,15.311-8.837c1.788-6.668-2.168-13.522-8.836-15.312l-70.664-18.946
+                    c-3.202-0.857-6.615-0.409-9.485,1.247c-2.872,1.656-4.967,4.387-5.826,7.589L0.43,293.092
+                    c-1.788,6.668,2.168,13.522,8.836,15.311c1.085,0.291,2.173,0.431,3.245,0.431c5.518,0,10.569-3.684,12.066-9.267l10.649-39.717
+                    c29.624,46.647,81.189,75.367,137.132,75.365c1.797,0,3.604-0.029,5.408-0.089c43.381-1.434,83.608-19.674,113.271-51.362
+                    s45.209-73.031,43.776-116.413C334.586,160.453,328.805,155.026,321.907,155.271z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <span class="svg-icon">
+                                <svg
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  x="0px"
+                                  y="0px"
+                                  viewBox="0 0 483.3 483.3"
+                                  style="enable-background: new 0 0 483.3 483.3"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <path
+                                      d="M424.3,57.75H59.1c-32.6,0-59.1,26.5-59.1,59.1v249.6c0,32.6,26.5,59.1,59.1,59.1h365.1c32.6,0,59.1-26.5,59.1-59.1
+                    v-249.5C483.4,84.35,456.9,57.75,424.3,57.75z M456.4,366.45c0,17.7-14.4,32.1-32.1,32.1H59.1c-17.7,0-32.1-14.4-32.1-32.1v-249.5
+                    c0-17.7,14.4-32.1,32.1-32.1h365.1c17.7,0,32.1,14.4,32.1,32.1v249.5H456.4z"
+                                    ></path>
+                                    <path
+                                      d="M304.8,238.55l118.2-106c5.5-5,6-13.5,1-19.1c-5-5.5-13.5-6-19.1-1l-163,146.3l-31.8-28.4c-0.1-0.1-0.2-0.2-0.2-0.3
+                    c-0.7-0.7-1.4-1.3-2.2-1.9L78.3,112.35c-5.6-5-14.1-4.5-19.1,1.1c-5,5.6-4.5,14.1,1.1,19.1l119.6,106.9L60.8,350.95
+                    c-5.4,5.1-5.7,13.6-0.6,19.1c2.7,2.8,6.3,4.3,9.9,4.3c3.3,0,6.6-1.2,9.2-3.6l120.9-113.1l32.8,29.3c2.6,2.3,5.8,3.4,9,3.4
+                    c3.2,0,6.5-1.2,9-3.5l33.7-30.2l120.2,114.2c2.6,2.5,6,3.7,9.3,3.7c3.6,0,7.1-1.4,9.8-4.2c5.1-5.4,4.9-14-0.5-19.1L304.8,238.55z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <span class="svg-icon">
+                                <svg
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  x="0px"
+                                  y="0px"
+                                  width="407.513px"
+                                  height="407.513px"
+                                  viewBox="0 0 407.513 407.513"
+                                  style="
+                                    enable-background: new 0 0 407.513 407.513;
+                                  "
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <path
+                                      d="M387.06,399.833c0.193-0.398,0.381-0.795,0.535-1.217c0.166-0.437,0.293-0.869,0.407-1.318
+                c0.114-0.408,0.208-0.814,0.281-1.236c0.08-0.491,0.12-0.977,0.146-1.471c0.013-0.266,0.08-0.512,0.08-0.775V160.378
+                c0-0.074-0.027-0.146-0.027-0.221c-0.014-0.732-0.106-1.457-0.233-2.18c-0.039-0.201-0.033-0.404-0.08-0.602
+                c-0.2-0.91-0.501-1.799-0.896-2.658c-0.087-0.205-0.228-0.381-0.327-0.578c-0.321-0.633-0.67-1.258-1.098-1.84
+                c-0.214-0.297-0.48-0.551-0.723-0.83c-0.32-0.367-0.603-0.758-0.963-1.1c-0.08-0.072-0.174-0.117-0.247-0.189
+                c-0.073-0.061-0.12-0.137-0.188-0.197L212.671,3.3c-5.129-4.4-12.699-4.4-17.828,0L23.784,149.984
+                c-0.066,0.061-0.113,0.137-0.187,0.197c-0.074,0.072-0.168,0.117-0.248,0.189c-0.361,0.342-0.642,0.732-0.963,1.1
+                c-0.24,0.279-0.501,0.533-0.722,0.83c-0.429,0.582-0.776,1.207-1.097,1.84c-0.101,0.197-0.241,0.373-0.328,0.578
+                c-0.395,0.859-0.695,1.748-0.896,2.658c-0.046,0.197-0.04,0.4-0.08,0.602c-0.127,0.723-0.221,1.447-0.233,2.18
+                c0,0.074-0.027,0.146-0.027,0.221v233.438c0,0.256,0.067,0.493,0.08,0.747c0.027,0.498,0.067,0.99,0.147,1.48
+                c0.067,0.422,0.167,0.83,0.274,1.238c0.113,0.442,0.24,0.879,0.407,1.313c0.154,0.42,0.342,0.822,0.535,1.228
+                c0.194,0.387,0.395,0.77,0.622,1.143c0.254,0.416,0.542,0.799,0.836,1.185c0.16,0.206,0.274,0.436,0.448,0.637
+                c0.101,0.113,0.221,0.188,0.321,0.297c0.407,0.441,0.849,0.83,1.311,1.211c0.273,0.234,0.541,0.488,0.836,0.695
+                c0.494,0.348,1.022,0.629,1.564,0.907c0.288,0.15,0.555,0.337,0.856,0.466c0.668,0.291,1.377,0.498,2.1,0.684
+                c0.187,0.047,0.361,0.129,0.548,0.17c0.91,0.188,1.846,0.295,2.809,0.295h342.117c0.963,0,1.898-0.104,2.81-0.295
+                c0.152-0.033,0.294-0.1,0.446-0.141c0.757-0.185,1.498-0.404,2.193-0.709c0.288-0.123,0.549-0.306,0.83-0.447
+                c0.548-0.285,1.083-0.568,1.584-0.92c0.295-0.211,0.562-0.465,0.843-0.699c0.455-0.375,0.896-0.756,1.291-1.188
+                c0.102-0.105,0.229-0.185,0.321-0.293c0.187-0.211,0.307-0.449,0.475-0.666c0.287-0.375,0.568-0.752,0.822-1.156
+                C386.665,400.616,386.865,400.228,387.06,399.833z M46.394,195.095l87.088,93.203L46.394,363.81V195.095z M204.237,263.193
+                l134.039,116.925H69.398L204.237,263.193z M274.327,287.984l86.793-92.894v168.602L274.327,287.984z M203.757,31.737
+                l151.291,129.734L253.67,269.968l-39.896-34.803c-2.567-2.238-5.73-3.287-8.888-3.313c-0.193-0.017-1.01-0.021-1.224,0
+                c-3.149,0.02-6.312,1.062-8.881,3.286l-40.591,35.201L52.466,161.472L203.757,31.737z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </aside>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-round__body">
+                  <div class="table-container">
+                    <table class="table-listing">
+                      <tr>
+                        <td class="td--check">
+                          <label class="checkbox"
+                            ><input type="checkbox" /><i
+                              class="input-helper"
+                            ></i
+                          ></label>
+                        </td>
+                        <td class="td--avtar">
+                          <div class="avtar avtar--xsmall" data-text="J">
+                            <img src="images/300x300_1.jpg" alt="" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="listing__desc">
+                            <a href="#">
+                              <strong>James Anderson</strong><br />
+                              Suscipit mattis sit tortor, pede duiSuscipit
+                              mattis sit tortor, pede duiSuscipit mattis sit
+                              tortor, pede duiSuscipit mattis sit tortor
+                            </a>
+                          </div>
+                        </td>
+                        <td><span class="date"> 20/02/2018</span></td>
+                      </tr>
+
+                      <tr>
+                        <td class="td--check">
+                          <label class="checkbox"
+                            ><input type="checkbox" /><i
+                              class="input-helper"
+                            ></i
+                          ></label>
+                        </td>
+                        <td class="td--avtar">
+                          <div class="avtar avtar--xsmall" data-text="N"></div>
+                        </td>
+                        <td>
+                          <div class="listing__desc">
+                            <strong>Nathan Astle</strong><br />
+                            Suscipit mattis sit tortor, pede duiSuscipit mattis
+                            sit tortor, pede duiSuscipit mattis sit tortor, pede
+                            duiSuscipit mattis sit tortor
+                          </div>
+                        </td>
+                        <td><span class="date"> 20/02/2018</span></td>
+                      </tr>
+
+                      <tr>
+                        <td class="td--check">
+                          <label class="checkbox"
+                            ><input type="checkbox" /><i
+                              class="input-helper"
+                            ></i
+                          ></label>
+                        </td>
+                        <td class="td--avtar">
+                          <div class="avtar avtar--xsmall" data-text="M"></div>
+                        </td>
+                        <td>
+                          <div class="listing__desc">
+                            <strong>Mark Boucher</strong><br />
+                            Suscipit mattis sit tortor, pede duiSuscipit mattis
+                            sit tortor, pede duiSuscipit mattis sit tortor, pede
+                            duiSuscipit mattis sit tortor
+                          </div>
+                        </td>
+                        <td><span class="date"> 20/02/2018</span></td>
+                      </tr>
+
+                      <tr class="is-read">
+                        <td class="td--check">
+                          <label class="checkbox"
+                            ><input type="checkbox" /><i
+                              class="input-helper"
+                            ></i
+                          ></label>
+                        </td>
+                        <td class="td--avtar">
+                          <div class="avtar avtar--xsmall" data-text="J">
+                            <img src="images/300x300_2.jpg" alt="" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="listing__desc">
+                            <a
+                              href="advertiser_dashboard_messages_details.html"
+                            >
+                              <strong>James Anderson</strong><br />
+                              Suscipit mattis sit tortor, pede duiSuscipit
+                              mattis sit tortor, pede duiSuscipit mattis sit
+                              tortor, pede duiSuscipit mattis sit tortor
+                            </a>
+                          </div>
+                        </td>
+                        <td><span class="date"> 20/02/2018</span></td>
+                      </tr>
+
+                      <tr class="is-read">
+                        <td class="td--check">
+                          <label class="checkbox"
+                            ><input type="checkbox" /><i
+                              class="input-helper"
+                            ></i
+                          ></label>
+                        </td>
+                        <td class="td--avtar">
+                          <div class="avtar avtar--xsmall" data-text="S"></div>
+                        </td>
+                        <td>
+                          <div class="listing__desc">
+                            <strong>Stephen Fleming</strong><br />
+                            Suscipit mattis sit tortor, pede duiSuscipit mattis
+                            sit tortor, pede duiSuscipit mattis sit tortor, pede
+                            duiSuscipit mattis sit tortor
+                          </div>
+                        </td>
+                        <td><span class="date"> 20/02/2018</span></td>
+                      </tr>
+
+                      <tr class="is-read">
+                        <td class="td--check">
+                          <label class="checkbox"
+                            ><input type="checkbox" /><i
+                              class="input-helper"
+                            ></i
+                          ></label>
+                        </td>
+                        <td class="td--avtar">
+                          <div class="avtar avtar--xsmall" data-text="T"></div>
+                        </td>
+                        <td>
+                          <div class="listing__desc">
+                            <strong>Tim Saudi</strong><br />
+                            Suscipit mattis sit tortor, pede duiSuscipit mattis
+                            sit tortor, pede duiSuscipit mattis sit tortor, pede
+                            duiSuscipit mattis sit tortor
+                          </div>
+                        </td>
+                        <td><span class="date"> 20/02/2018</span></td>
+                      </tr>
+
+                      <tr class="is-read">
+                        <td class="td--check">
+                          <label class="checkbox"
+                            ><input type="checkbox" /><i
+                              class="input-helper"
+                            ></i
+                          ></label>
+                        </td>
+                        <td class="td--avtar">
+                          <div class="avtar avtar--xsmall" data-text="S">
+                            <img src="images/300x300_3.jpg" alt="" />
+                          </div>
+                        </td>
+                        <td>
+                          <div class="listing__desc">
+                            <a
+                              href="advertiser_dashboard_messages_details.html"
+                            >
+                              <strong>Steve Waugh</strong><br />
+                              Suscipit mattis sit tortor, pede duiSuscipit
+                              mattis sit tortor, pede duiSuscipit mattis sit
+                              tortor, pede duiSuscipit mattis sit tortor
+                            </a>
+                          </div>
+                        </td>
+                        <td><span class="date"> 20/02/2018</span></td>
+                      </tr>
+
+                      <tr class="is-read">
+                        <td class="td--check">
+                          <label class="checkbox"
+                            ><input type="checkbox" /><i
+                              class="input-helper"
+                            ></i
+                          ></label>
+                        </td>
+                        <td class="td--avtar">
+                          <div class="avtar avtar--xsmall" data-text="N"></div>
+                        </td>
+                        <td>
+                          <div class="listing__desc">
+                            <strong>Nathan Astle</strong><br />
+                            Suscipit mattis sit tortor, pede duiSuscipit mattis
+                            sit tortor, pede duiSuscipit mattis sit tortor, pede
+                            duiSuscipit mattis sit tortor
+                          </div>
+                        </td>
+                        <td><span class="date"> 20/02/2018</span></td>
+                      </tr>
+
+                      <tr class="is-read">
+                        <td class="td--check">
+                          <label class="checkbox"
+                            ><input type="checkbox" /><i
+                              class="input-helper"
+                            ></i
+                          ></label>
+                        </td>
+                        <td class="td--avtar">
+                          <div class="avtar avtar--xsmall" data-text="J"></div>
+                        </td>
+                        <td>
+                          <div class="listing__desc">
+                            <strong>James Anderson</strong><br />
+                            Suscipit mattis sit tortor, pede duiSuscipit mattis
+                            sit tortor, pede duiSuscipit mattis sit tortor, pede
+                            duiSuscipit mattis sit tortor
+                          </div>
+                        </td>
+                        <td><span class="date"> 20/02/2018</span></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="p-3">
+                    <ul class="pagination pagination--center">
+                      <li class="is-first">
+                        <a href="javascript:void(0)" title="First"></a>
+                      </li>
+                      <li class="is-prev">
+                        <a href="javascript:void(0)" title="previous"></a>
+                      </li>
+                      <li class="is-active">
+                        <a href="javascript:void(0)">1</a>
+                      </li>
+                      <li><a href="javascript:void(0)">2</a></li>
+                      <li><a href="javascript:void(0)">3</a></li>
+                      <li class="is-more">
+                        <a href="javascript:void(0)" title="More">...</a>
+                      </li>
+                      <li class="is-next">
+                        <a href="javascript:void(0)" title="Last"></a>
+                      </li>
+                      <li class="is-last">
+                        <a href="javascript:void(0)" title="Next"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION ENDS ========= -->
+    </section>
+    <!-- SITE-BODY ENDS ========= -->
+
+    <!-- FOOTER STARTS ========= -->
+    <footer class="site-footer" role="footer">
+      <!--  FOOTER LOWER STARTS ========= -->
+      <section class="section site--footer-lower p-0" role="contentinfo">
+        <div class="container">
+          <div
+            class="row justify-content-between align-items-center"
+            role="row"
+          >
+            <div class="col-md-7">
+              <nav class="inline-links" role="menu">
+                <ul>
+                  <li><a href="#" role="menuitem">Home</a></li>
+                  <li><a href="#" role="menuitem">About </a></li>
+                  <li><a href="#" role="menuitem">FAQ</a></li>
+                  <li><a href="#" role="menuitem">Blog</a></li>
+                  <li><a href="#" role="menuitem">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-md-auto">
+              <nav class="inline-links" role="menu">
+                <ul>
+                  <li><a href="#" role="menuitem">Privacy Policy</a></li>
+                  <li><a href="#" role="menuitem">Terms & Conditions </a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  FOOTER LOWER ENDS ========= -->
+    </footer>
+    <!-- FOOTER ENDS ========= -->
+
+    <!-- JS ================================================== -->
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="js/ui_functions.js" type="text/javascript"></script>
+  </body>
+</html>

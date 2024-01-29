@@ -1,0 +1,38 @@
+//
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+
+//
+@import 'themes/variables';
+
+//
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/footer';
+//
+@import 'components/custom';
+@import 'components/bg';
+@import 'components/offcanvas';
+@import 'components/forms';
+@import 'components/checkbox';
+@import 'components/buttons';
+@import 'components/section';
+@import 'components/dropdown';
+@import 'components/typography';
+@import 'components/radio';
+@import 'components/cookies';
+@import 'components/scrollbar';
+@import 'components/cms';
+@import 'components/card';
+
+//
+@import 'vendor/slick';
+//
+// @import "page/index";
+
+@import 'page/login';
+@import 'page/accounts';
+@import 'page/onboarding';
+@import 'page/editor';
+@import 'page/editor-signature';
+@import 'page/checkout';

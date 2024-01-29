@@ -1,0 +1,15 @@
+.grid {
+    &.grid--ver-desktop {
+        &.grid--desktop {
+            display: flex;
+            flex-direction: row;
+            > .grid__item {
+                &.grid__item--fluid,
+                &.grid__item--fluid-desktop {
+                    flex: 1 auto;
+                    min-width: 0;
+                }
+            }
+        }
+    }
+}
